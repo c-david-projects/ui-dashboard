@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="César Martins Lima">
+
+    <title>UI Dashboard by César Lima</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    <!-- Our Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style4.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e2210b8241.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="sticky" style="position:relative;">
+            <div class="sidebar-header">
+                <h3><img src="logo.png" class="logo" alt=""></h3>
+                <strong><img src="mini-logo.png" alt="" class="logo-mini"></strong>
+            </div>
+            <ul class="list-unstyled components">
+                <li data-toggle="tooltip" data-placement="right" title="" data-original-title="info-3">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active-menu">
+                        <i class='fas fa-chart-bar'></i>
+                        <span>Levels</span>
+                    </a>
+                    <ul class="collapse list-unstyled mini-list" id="homeSubmenu">
+                        <li>
+                            <span><a href="#">Home 1</a></span>
+
+                        </li>
+                        <li>
+                            <span><a href="#">Home 2</a></span>
+                        </li>
+                        <li>
+                            <span><a href="#">Home 3</a></span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="active-menu">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Management</span>
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active-menu">
+                        <i class="fas fa-copy"></i>
+                        <span>Administration</span>
+                    </a>
+                    <ul class="collapse list-unstyled mini-list" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="active-menu">
+                        <i class='fas fa-car'></i>
+                        <span>Management fleet</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="active-menu">
+                        <i class='fas fa-print'></i>
+                        <span>Team reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active-menu">
+                        <i class='fas fa-sliders-h'></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+                <li style="padding-bottom: 2em;">
+                    <a href="#" class="active-menu">
+                        <i class="fa fa-table"></i>
+                        <span>Neural Networks</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn-close-rw hide-btn">
+						<!-- <i id="close" class="fas fa-window-close"></i> -->
+						<img id="close" src="xmark-solid-blue.svg" class="x-mark" alt=""> 
+						<i id="bars" class="fa fa-bars d-none bars"></i>
+                    </button>
+
+                    <button class="btn btn-dark d-inline-block d-lg-none ms-auto btn-responsive z-indx" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-arrows-up-down"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ms-auto justify-content-center position-nav-mobile">
+                            <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="info-3">
+                                <a class="nav-link" href="#"><i class='far fa-bell size-icon icon-link'></i></a>
+                            </li>
+                            <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="info-4">
+                                <a class="nav-link" href="#"><i class="fas fa-question-circle size-icon icon-link"></i></a>
+                            </li>
+                            <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="info-5">
+                                <a class="nav-link" href="#"><i class='fas fa-chart-bar size-icon icon-link'></i></a>
+                            </li>
+                            <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="info-6">
+                                <a class="nav-link" href="#"><i class='fas fa-sign-out-alt size-icon icon-link'></i>
+								</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav ms-auto">
+                            <div class="form-group has-search">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+
+                            <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="info-3">
+                                <a class="nav-link buttons-rsp" href="#"><i class='far fa-bell size-icon icon-link'></i></a>
+                            </li>
+                            <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="info-4">
+                                <a class="nav-link buttons-rsp" href="#"><i class="fas fa-question-circle size-icon icon-link"></i></a>
+                            </li>
+                            <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="info-5">
+                                <a class="nav-link buttons-rsp" href="#"><i class='fas fa-chart-bar size-icon icon-link'></i></a>
+                            </li>
+                            <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="info-6">
+                                <a class="nav-link buttons-rsp" href="#"><i class='fas fa-sign-out-alt size-icon icon-link'></i>
+								</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-content col-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-9 p-1">
+                        <div class="frame-card">
+                            <h4>Welcome César Lima !</h4>
+                            <hr>
+                            <form class="row">
+                                <div class="col-sm-12 col-md-5 col-lg-3 col-xl-3">
+                                    <label class="label-rw">Filter type</label>
+                                    <select class="form-select">
+                                <option selected>KUALA LUMPUR</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                                </div>
+                                <div class="col-sm-12 col-md-5 col-lg-3 col-xl-3">
+                                    <label class="label-rw">Filter</label>
+                                    <select class="form-select">
+                                <option selected>KUALA LUMPUR</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="frame-card">
+                            <main>
+                                <ul class="tabs">
+                                    <li class="tab current" data-tab="tab-1">Admin Information</li>
+                                    <li class="tab" data-tab="tab-2">Database status</li>
+                                    <li class="tab" data-tab="tab-3">Servers area</li>
+                                    <li class="tab" data-tab="tab-4">Networks</li>
+                                </ul>
+                                <hr>
+                                <div id="tab-1" class="tab-content current">
+                                    <!-- Your content here -->
+                                    <ul>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Human resources</li>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">CLients on demand</li>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Clients on request</li>
+                                    </ul>
+
+                                </div>
+                                <!-- end .tab-content -->
+
+                                <div id="tab-2" class="tab-content">
+                                    <!-- Your content here -->
+                                    <ul>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Open Robotic Farms</li>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Return data</li>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Pre admin time</li>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Without timestamp</li>
+
+                                    </ul>
+
+                                </div>
+                                <!-- end .tab-content -->
+
+                                <div id="tab-3" class="tab-content">
+
+                                    <!-- Your content here -->
+                                    <ul>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Open cases</li>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Return contracts</li>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Overdue servers</li>
+                                    </ul>
+
+                                </div>
+                                <div id="tab-4" class="tab-content">
+
+                                    <!-- Your content here -->
+                                    <ul>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Employees</li>
+                                        <li><img src="arrow-top-right-svg.svg" alt="">Customers</li>
+                                    </ul>
+
+                                </div>
+                                <!-- end .tab-content -->
+                            </main>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="frame-card card-2 card-height">
+                                    EXPECTED SERVERS ONLINE
+                                    <hr>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <ul>
+                                                <li class="list-sidebar"><img class="mr-8" src="arrow-top-right-svg.svg" alt="">ON HOLD</li>
+                                                <li class="list-sidebar"><img class="mr-8" src="arrow-top-right-svg.svg" alt="">Ready</li>
+                                                <li class="list-sidebar"><img class="mr-8" src="arrow-top-right-svg.svg" alt="">Out of service</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <ul>
+                                                <li class="list-sidebar"><img class="mr-8" src="arrow-top-right-svg.svg" alt="">Reserved</li>
+                                                <li class="list-sidebar"><img class="mr-8" src="arrow-top-right-svg.svg" alt="">In infinite loop Cycle</li>
+                                                <li class="list-sidebar"><img class="mr-8" src="arrow-top-right-svg.svg" alt="">At exclusive Branch</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="frame-card card-2 card-height">
+                                    UTILIZATION
+                                    <hr>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="display:flex;justify-content:center">
+                                            <img src="graph.png" alt="" class="ag-graph" style="width: 28em;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-3 p-1">
+                        <div class="frame-card">
+                            <span>Quick Access</span><span class="fl-right"><img src="wrench-clock.svg"></span>
+                            <hr>
+                            <form class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-10">
+                                    <label class="label-rw">Network Stations</label>
+                                    <select class="form-select">
+                                <option selected>Open to select</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-10">
+                                    <label class="label-rw">Group Servers</label>
+                                    <select class="form-select">
+                                <option selected>Open to select</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-10">
+                                    <label class="label-rw">Ethernet types</label>
+                                    <select class="form-select">
+                                  <option selected>Open to select</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="js/script.js">
+        </script>
+</body>
+
+</html>
